@@ -5,8 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projet01</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-<body>
+    <body>
+    <!-- Navigation Section-->
+    <header>
+        <nav>
+            <ul>
+                <li>
+                <img id="logo" src="logo.png" alt="logo" />
+                </li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="propos.html">A Propos</a></li>
+                <li><a href="voyager.html">Voyager</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Home Section -->
+    <section id="accueil">
+        <h1>Mon Voyage en Corse</h1>
+        <img class="photo-accueil" src="corse.jpg" alt="photo-accueil" />
+    </section>
+    <!-- Footer Newsletter -->
+    <footer>
+        <h2>Recevez notre newsletter</h2>
+        <form method = "post" action="traitement.php">
+            <label for="email">Saisissez votre adresse mail</label><br />
+            <input
+            type="email"
+            id="email"
+            name="email"
+            value="name@forexample.com" /><br />
+            <input type="submit" value="S'abonner" />
+        </form>
+       
+        
+        </form>
+
+    </footer>
     
 </body>
 </html>
