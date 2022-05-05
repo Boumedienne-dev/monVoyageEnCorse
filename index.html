@@ -8,12 +8,12 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
     <body>
-    <!-- Navigation Section-->
+                         <!-- Navigation Section-->
     <header>
         <nav>
-            <ul>
-                <li>
-                <img id="logo" src="logo.png" alt="logo" />
+            <ul class="nav">
+                <li class="cercle">
+                <img id="logo" src="./images/logo.png" alt="logo" />
                 </li>
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="propos.html">A Propos</a></li>
@@ -22,13 +22,15 @@
             </ul>
         </nav>
     </header>
-    <!-- Home Section -->
+                            <!-- Home Section -->
+
     <section id="accueil">
         <h1>Mon Voyage en Corse</h1>
-        <img class="photo-accueil" src="corse.jpg" alt="photo-accueil" />
     </section>
-    <!-- Footer Newsletter -->
+                    <!-- Footer Newsletter -->
+
     <footer>
+        <div class="footer-container">
         <h2>Recevez notre newsletter</h2>
         <form method = "post" action="traitement.php">
             <label for="email">Saisissez votre adresse mail</label><br />
@@ -39,10 +41,23 @@
             value="name@forexample.com" /><br />
             <input type="submit" value="S'abonner" />
         </form>
-       
-        
-        </form>
-
+        </div>
+        <div>
+        <ul class="reseaux-sociaux">
+            <li>
+                <a href="https://twitter.com/home" target="blank">
+                    <img src="./images/twitter.png"/></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/boumedienne_dev/" target="blank">
+                    <img src="./images/instagram.jpg"/></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="blank">
+                    <img src="./images/facebook.jpg"/></a>
+            </li>
+        </ul>
+        </div>
     </footer>
     
 </body>
