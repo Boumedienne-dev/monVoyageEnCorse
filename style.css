@@ -1,6 +1,8 @@
 * {
-    list-style: none;
-    overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
     }
 
 /* Mise en page de ma page d'accueil
@@ -8,69 +10,69 @@
 
 
 .nav {
-    font-family: 'Inter';
-    font-style: italic;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 50px;
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
     }
 
     ul.nav {
-        margin-top: 30px;
+    margin-top: 30px;
     }
 
     a {
-        text-decoration: none;
+    text-decoration: none;
     }
 
     #logo {
-        position: absolute;
-        width: 120px;
-        height: 90px;
-        left: 40px;
-        top: 5px;
-        border-radius: 10px;
+      width: 120px;
+      height: 90px;
+      left: 40px;
+      top: 5px;
+      border-radius: 10px;
         }
 
     .accueil {
-        border-radius: 30px;
-        height: 30px;
-        width: 12%;
-        align-items: center;
-        background-color: aqua;
+      border-radius: 30px;
+      height: 30px;
+      width: 12%;
+      align-items: center;
+      background-color: aqua;
     }
 
     .propos {
-        border-radius: 30px;
-        height: 30px;
-        width: 12%;
-        align-items: center;
-        background-color: aqua;
+      border-radius: 30px;
+      height: 30px;
+      width: 12%;
+      align-items: center;
+      background-color: aqua;
     }
 
     .voyager {
-        border-radius: 30px;
-        height: 30px;
-        width: 12%;
-        align-items: center;
-        background-color: aqua;
+      border-radius: 30px;
+      height: 30px;
+      width: 12%;
+      align-items: center;
+      background-color: aqua;
     }
 
     .contact {
-        border-radius: 30px;
-        height: 30px;
-        width: 12%;
-        align-items: center;
-        background-color: aqua;
+      border-radius: 30px;
+      height: 30px;
+      width: 12%;
+      align-items: center;
+      background-color: aqua;
     }
 
 
-/* mon titre de site */
+  /* mon titre de site 
+  Mon Voyage en Corse */
 
 h1 {
     font-size: 40px;
@@ -90,10 +92,75 @@ h1 {
     opacity: 0.9;
 }
 
+/* mise en page de mon footer*/
 
+/* taille de mes 3 logos de reseaux-sociaux */
 
+.twitter, .instagram, .facebook {
+  
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
 
+.instagram {
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
+/* flex de mes 3 logos de reseaux-sociaux */
+
+.reseaux-sociaux{
+  display: flex;
+  align-items: center;
+  width: 250px;
+  height: 150px;  
+}
+
+/* flexbox de newsletter et reseaux-sociaux */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 50px;
+  background-color: aqua;
+  }
+
+  .newsletter {
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    
+  }
+
+  .email {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #DEDEDE;
+    margin-bottom: 10px;
+  }
+
+  .submit {
+    background-color: #DEDEDE;
+    border: #DEDEDE;
+    padding: 5px 10px;
+  }
+
+  /* span de saisissez votre adresse mail */
+
+  span {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+  }
+
+  /* une marge à mon contenu newsletter et email */
+  
+  .footer-container {
+    margin: 20px;
+  }
 
 
 /* Mise en page A Propos de moi
@@ -128,13 +195,7 @@ h2 {
   transform: scale(1.1);
 }
 
-/* footer
-    mise en page de footer (flexbox)*/
 
-    footer h2{
-
-
-    }
     
     
 
@@ -142,7 +203,7 @@ h2 {
 
 
 /* for touch screen devices */
-@media (hover: none) { 
+@media screen (hover: none) { 
   .location-title {
     opacity: 1;
   }
