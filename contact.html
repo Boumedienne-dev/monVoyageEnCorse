@@ -20,36 +20,65 @@
     </nav>
     </header>
 <body>
-    <div class="contactez-nous">
-        <h2>Contactez-nous</h2>
-        <p>Un problème, une question, envie de nous envoyer un message d’amour ? N’hésitez pas à utiliser ce formulaire pour prendre contact avec nous !</p>
+    <h2>Contact</h2>
+    <h3>Vous avez des questions ? Ou Vous voulez juste me faire un coucou ?
+        Ecrivez-moi ici !</h3>
+    
         <form action="/page-traitement-donnees" method="post">
-        <div>
-        <label for="nom">Votre nom</label>
-        <input type="text" id="nom" name="nom" placeholder="Martin" required>
-        </div>
-        <div>
-        <label for="email">Votre e-mail</label>
-        <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>
-        </div>
-        <div>
-        <label for="sujet">Quel est le sujet de votre message ?</label>
-        <select name="sujet" id="sujet" required>
-        <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
-        <option value="probleme-compte">Problème avec mon compte</option>
-        <option value="question-produit">Question à propos d’un produit</option>
-        <option value="suivi-commande">Suivi de ma commande</option>
-        <option value="autre">Autre...</option>
-        </select>
-        </div>
-        <div>
-        <label for="message">Votre message</label>
-        <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>
-        </div>
-        <div>
-        <button type="submit">Envoyer mon message</button>
-        </div>
-        </form>
-        </div>
+            <div class="contactez-nous">
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" name="nom" placeholder="Martin" required>                       
+            <label for="email">Votre e-mail</label>
+            <input type="email" id="email" name="email" placeholder="monadresse@mail.com" required>           
+            <label for="sujet">Quel est le sujet de votre message ?</label>
+            <select name="sujet" id="sujet" required>
+            <option value="" disabled selected hidden>Choisissez le sujet de votre message</option>
+            <option value="probleme-compte">Problème avec mon compte</option>
+            <option value="question-voyage">Question à propos de mon Voyage</option>
+            <option value="votre avis sur mon blog">donner votre avis sur mon blog</option>
+            <option value="autre">Autre...</option>
+            </select>
+            </div>
+
+            <div class="message">
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" placeholder="Bonjour, je vous contacte car...." required></textarea>        
+            <button type="submit">Envoyer mon message</button>
+            </div>
+            
+            </form>
+        </div>   
+        
+       
+
+                             <!-- Footer Newsletter -->
+
+    <footer>    
+
+        <form class="footer-container">
+            <h2 class="newsletter">Recevez notre newsletter</h2>
+            <label for="email"><span>Saisissez votre adresse mail</span></label><br />
+            <input class="email"
+            type="email"
+            id="email"
+            name="email"
+            value="name@forexample.com" /><br />
+            <input class="submit" type="submit" value="S'abonner" />
+        </form>        
+        <ul class="reseaux-sociaux">
+            <li>
+                <a href="https://twitter.com/home" target="blank">
+                    <img class="twitter" src="./images/twitter.png"/></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/boumedienne_dev/" target="blank">
+                    <img class="instagram" src="./images/instagram.jpg"/></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="blank">
+                    <img class="facebook" src="./images/facebook.jpg"/></a>
+            </li>
+        </ul>        
+    </footer>
 </body>
 </html>
