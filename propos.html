@@ -23,10 +23,9 @@
 <body>
 
                     <!-- Creation flex-container de mon paragraphe et ma photo -->
-
+    <section>
+                    <h2>A Propos de moi</h2>
     <div class="flex-container">
-        <h2>A Propos de moi</h2>
-        <div>
             <p>L’envie de partir en voyage vous démange ? Ça tombe bien, vous êtes au bon endroit !
             On passe tous par ces moments où l’on a envie de faire sa valise, de sauter dans un train, 
             un avion, une fusée, <span>n’importe quoi pour peu qu’on change d’univers…</span> 
@@ -36,17 +35,15 @@
             Ce blog est là pour vous aider à dire <span>« Mon Voyage en Corse »</span> à votre quotidien 
             le temps d’un voyage, 
             qu’il soit court, long, 
-            lointain ou à deux pas de chez vous !  
-            
-            
-
-
-        </p></div>
-
-        <div><img src="./images/image12.jpg"></div>
+            lointain ou à deux pas de chez vous !          
+            </p>
+            <img src="./images/image12.jpg" alt="" class="boum">
+        
     </div>
+    </section>
+    
 
-                        <!-- Mise en page avec Grid container -->
+                  <!-- Mise en page avec Grid container -->
 
         <div class="child-page-listing">
 
@@ -55,7 +52,7 @@
             <div class="grid-container">               
             
                 <div class="location-image">
-                <img src="./images/image2.jpg" alt="image2">          
+                <img src="./images/image6.jpg" alt="image2">          
                 </div>
           
                 <div class="location-image">
@@ -77,7 +74,7 @@
                 </div>
 
                 <div class="location-image">
-                <img src="./images/image6.jpg" alt="image6">
+                <img src="./images/image2.jpg" alt="image6">
                 </div>
 
                 
@@ -86,12 +83,47 @@
                 </div>        
           
             </div>
-            <!-- end grid container -->
-          
-          </div>
-
-
+                        <!-- end grid container -->
     </section>
+                        <!-- Video Corse -->
+
+    <section>
+        <h2>Que voir en Corse</h2>
+        <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/w-oHIqHJqd0" 
+        title="YouTube video player" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe></div>
+    </section>
+
+                            <!-- Footer Newsletter -->
+
+    <footer>
+        <form class="footer-container">
+            <h2 class="newsletter">Recevez notre newsletter</h2>
+            <label for="email"><span>Saisissez votre adresse mail :</span></label><br />
+            <input class="email"
+            type="email"
+            id="email"
+            name="email"
+            value="name@forexample.com" /><br />
+            <input class="submit" type="submit" value="S'abonner" />
+        </form>        
+        <ul class="reseaux-sociaux">
+            <li>
+                <a href="https://twitter.com/home" target="blank">
+                    <img class="twitter" src="./images/twitter.png"/></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/boumedienne_dev/" target="blank">
+                    <img class="instagram" src="./images/instagram.jpg"/></a>
+            </li>
+            <li>
+                <a href="https://www.facebook.com/" target="blank">
+                    <img class="facebook" src="./images/facebook.jpg"/></a>
+            </li>
+        </ul>        
+    </footer>
     
 </body>
 </html>
