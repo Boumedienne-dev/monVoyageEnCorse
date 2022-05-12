@@ -11,7 +11,7 @@
 <header>
     <nav>
         <ul class="nav">
-            <li><img id="logo" src="./images/logo.png" alt="logo" /></li>
+            <li><img id="logo" src="./images/logoC.jpeg" alt="logo" /></li>
             <li class="accueil"><a href="index.html">Accueil</a></li>
             <li class="propos"><a href="propos.html">A Propos</a></li>
             <li class="voyager"><a href="voyager.html">Voyager</a></li>
@@ -24,8 +24,8 @@
     <h3>Vous avez des questions ? Ou Vous voulez juste me faire un coucou ?
         Ecrivez-moi ici !</h3>
     
-        <form action="/page-traitement-donnees" method="post">
-            <div class="contactez-nous">
+        <form class="contactez-nous">
+            <div>
             <label for="nom">Votre nom</label>
             <input type="text" id="nom" name="nom" placeholder="Martin" required>                       
             <label for="email">Votre e-mail</label>
@@ -45,6 +45,8 @@
             <textarea id="message" name="message" cols="80" rows="20" placeholder="Bonjour, je vous contacte car...." required></textarea>        
             <button type="submit">Envoyer mon message</button>
             </div>
+            <div class="container-notifications"></div>
+
 
             
             
@@ -55,34 +57,26 @@
 
                              <!-- Footer Newsletter -->
 
-    <footer>    
-
+    <footer>
         <form class="footer-container">
             <h2 class="newsletter">Recevez notre newsletter</h2>
             <label for="email"><span>Saisissez votre adresse mail :</span></label><br />
-            <input class="email"
-            type="email"
-            id="email"
-            name="email"
-            value="name@forexample.com" /><br />
+            <input class="email" type="email" id="email" name="email" value="name@forexample.com" /><br />
             <input class="submit" type="submit" value="S'abonner" />
         </form>        
         <ul class="reseaux-sociaux">
-            <li>
-                <a href="https://twitter.com/home" target="blank">
-                    <img class="twitter" src="./images/twitter.png"/></a>
+            <li><a href="https://twitter.com/home" target="blank">
+            <img class="twitter" src="./images/twitter.png"/></a>
             </li>
-            <li>
-                <a href="https://www.instagram.com/boumedienne_dev/" target="blank">
-                    <img class="instagram" src="./images/instagram.jpg"/></a>
+            <li><a href="https://www.instagram.com/boumedienne_dev/" target="blank">
+            <img class="instagram" src="./images/instagram.png"/></a>
             </li>
-            <li>
-                <a href="https://www.facebook.com/" target="blank">
-                    <img class="facebook" src="./images/facebook.jpg"/></a>
+            <li><a href="https://www.facebook.com/" target="blank">
+            <img class="facebook" src="./images/fb.png"/></a>
             </li>
         </ul>        
     </footer>
-
+    
     <script src="contact.js"></script>
 </body>
 </html>

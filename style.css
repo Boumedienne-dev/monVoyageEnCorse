@@ -38,36 +38,33 @@
       border-radius: 10px;
         }
 
-    .accueil {
-      border-radius: 30px;
+    .accueil:hover {
+      border-bottom: 3px aqua solid;
       height: 30px;
       width: 12%;
       align-items: center;
-      background-color: aqua;
     }
 
-    .propos {
-      border-radius: 30px;
+    .propos:hover {
+      border-bottom: 3px aqua solid;
       height: 30px;
       width: 12%;
       align-items: center;
-      background-color: aqua;
     }
 
-    .voyager {
-      border-radius: 30px;
+    .voyager:hover {
+      border-bottom: 3px aqua solid;
       height: 30px;
       width: 12%;
       align-items: center;
-      background-color: aqua;
     }
 
-    .contact {
-      border-radius: 30px;
+    .contact:hover {
+      border-bottom: 3px aqua solid;
       height: 30px;
       width: 12%;
       align-items: center;
-      background-color: aqua;
+
     }
 
 
@@ -225,8 +222,7 @@ p {
 /* video corse à centrer */
 
 .video {
-  margin-left: 300px;
-  margin-right: 200px;
+  text-align: center;
 }
 
         /* mise en page de mon menu voyager */
@@ -241,7 +237,7 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 1em;
 }
 
@@ -324,9 +320,6 @@ ul li {
 }
 
 .map {
-  
-  
-  height: 200px;
   width: 100%;
   padding: 30px;
 }
@@ -340,7 +333,7 @@ ul li {
   width: 100%;
   border: 1px solid;
   border-radius: 8px;
-  padding: 0 50px 0 50px;
+  padding: 30px;
   background: white;
   }
   
@@ -408,9 +401,7 @@ ul li {
   }
   
   .message {
-  
   align-items:center;
-  
   }
   
   form button {
@@ -426,6 +417,30 @@ ul li {
   color: #303030;
   }
 
+  label {
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: #303030;
+  }
+
+  .container-notifications {
+    position: fixed;
+    bottom: 200px;
+    right: 100px;
+    margin: 3rem;
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+.notification-message {
+  padding: 10px;
+  margin: 10px;
+  border: 3px black solid;
+  background-color: white;
+  border-radius: 10px;
+}
+  
+
 
     
     
@@ -437,9 +452,9 @@ ul li {
 @media screen (hover: none) { 
   .location-title {
     opacity: 1;
-  }
+  
   .location-image img {
     filter: blur(2px);
   }
-}
+
 
