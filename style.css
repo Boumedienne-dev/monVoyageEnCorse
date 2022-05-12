@@ -113,7 +113,6 @@ h1 {
 .reseaux-sociaux{
   display: flex;
   align-items: center;
-  width: 250px;
   height: 150px;  
 }
 
@@ -130,9 +129,9 @@ footer {
   }
 
   .newsletter {
-    font-size: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-style: italic;
+    background: none;
     
   }
 
@@ -191,17 +190,20 @@ img {
 
 h2 {
   margin-bottom: .5em;
+  background-color: lightgrey;
+  color: rgb(0, 153, 255);
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: left;
   margin: 20px;
-}
+  }
 
 p {
   text-align:justify;
+  margin: 20px;
 }
 
-/* mis en grid mes 5 photos horizontalement */
+/* mis en grid mes 5 photos horizontalement page2*/
 
 .grid-container {
   display: grid;
@@ -223,23 +225,56 @@ p {
 /* video corse à centrer */
 
 .video {
-   margin-left: 300px;
+  margin-left: 300px;
   margin-right: 200px;
 }
 
-/* mise en page de mon menu voyager */
+        /* mise en page de mon menu voyager */
 
 .location-image a img {
   width: 100%; /* need to overwrite inline dimensions */
   height: auto;
 }
-h2 {
-  margin-bottom: .5em;
-}
+
+
+/* Mise en page de mes photos parcours en colonne */
+
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 1em;
+}
+
+/* Mise en page de mon paragraphe (mes bons plans)&itinéraire et photos-parcours avec flex */
+
+.voyager-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.partie-gauche {
+  width: 50%;
+}
+
+h3 {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.776);
+  margin: 20px;
+}
+
+ul li {
+  list-style-position: inside;
+  margin: 20px;
+  color: rgba(0, 0, 0, 0.776);
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mon-itineraire-15-jours {
+  background-color: aqua;
 }
 
 
@@ -288,12 +323,21 @@ h2 {
   filter: blur(2px);
 }
 
+.map {
+  
+  
+  height: 200px;
+  width: 100%;
+  padding: 30px;
+}
+
+
 
 /* mise en page de mon menu Contact */
 
 
-  .contactez-nous {
-  width: 400px;
+.contactez-nous {
+  width: 100%;
   border: 1px solid;
   border-radius: 8px;
   padding: 0 50px 0 50px;
@@ -312,18 +356,6 @@ h2 {
     margin-top: 25px;
     }
 
-  .message {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    min-height: 83px;
-    margin-top: 25px;
-  }
-  
-  
-  
-  
-  
   form div > label {
   margin-bottom: 7px;
   font-weight: 600;
@@ -334,7 +366,6 @@ h2 {
   border: none;
   border-radius: 5px;
   font-size: 16px;
-  font-weight: 500;
   font-family: Montserrat, "sans-serif";
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
   }
@@ -357,22 +388,29 @@ h2 {
   padding: 15px 0px 0px 10px;
   }
   
+/* nom prenom en noir dans contact */
+
   form div > input::placeholder, form div > textarea::placeholder {
-  color: white;
+  color: rgb(8, 8, 8);
   }
   
+  /* le sujet de votre message en noir */
+  
   form div > select:invalid {
-  color: white;
+  color: rgb(8, 8, 8);
   }
+  
+  /* choix des réponses à la question en blanc */
   
   form div > select option {
   background: white;
   color: #303030;
   }
   
-  form div:last-child {
+  .message {
+  
   align-items:center;
-  margin-top: 20px;
+  
   }
   
   form button {

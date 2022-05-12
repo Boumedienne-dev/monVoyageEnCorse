@@ -26,11 +26,15 @@
 
     <section>
         <h2>Voyagez en Corse en 15 Jours : que faire ?</h2>
-        <h3>Voici mes bons plans :</h3>
+        <h3 >Voici mes bons plans :</h3>
+        <div class="voyager-container">
+
+      <div class="partie-gauche">
+
         <p>Pour visiter la Corse en 15 jours, 
             le plus simple est d’atterrir (ou de débarquer) à <strong>Bastia</strong> et de faire ensuite une boucle.  
-        </p>
-        <p>Je vous conseille de commencer en beauté 
+        
+            <span class="text-voyager">Je vous conseille de commencer en beauté 
             ce roadtrip de 2 semaines en Corse en consacrant 2 jours à faire le <strong>tour du Cap Corse</strong>. 
             Le Cap Corse est l’un des plus beaux endroits de Haute Corse, l’un des plus sauvages ! 
             On retrouve dans ce petit bout de Corse tous les attraits de l’ile de beauté : 
@@ -44,17 +48,30 @@
             d’y consacrer 2 jours pour profiter des longues plages et criques sauvages, 
             découvrir les villages typiques et leurs ports souvent plein de charme, et 
             pourquoi pas faire la superbe randonnée du sentier des douaniers ! 
-            Pour le programme détaillé du tour du Cap Corse en 2 jours, je vous invite à regarder les photos dédiées.
+            Pour le programme détaillé du tour du Cap Corse en 2 jours, je vous invite à regarder les photos dédiées.</span>
         </p>
         
-       
-
-  <h2>Mon parcours en quelques photos :</h2>
-
+        <h2>Mon Itineraire pour visiter la Corse en 15 jours</h2>
+      <ul class="mon-itineraire-15-jours">
+        <li>Jours 1 et 2 : Cap Corse</li>
+        <li>Jour 3 : Saint Florent et le Désert des Agriates</li>
+        <li>Jour 4 : Calvi</li>
+        <li>Jour 5 : Golfe de Porto</li>
+        <li>Jour 6 : Calanques de Piana</li>
+        <li>Jour 7 : Golfe d’Ajaccio</li>
+        <li>Jour 8 : Golfe de Propriano</li>
+        <li>Jours 9 à 11 : Bonifacio</li>
+        <li>Jour 12 : Autour de Porto Vecchio</li>
+        <li>Jour 13 : Bavella</li>
+        <li>Jour 14 : Corte</li>
+        <li>Jour 15 : Bastia</li>
+      </ul>
+    </div>
+    
   <div class="grid-container">
 
-    <article id="3685" class="location-listing">
 
+    <article class="location-listing">
       <a class="location-title" href="#">Cap Corse</a>
 
       <div class="location-image">
@@ -65,8 +82,7 @@
 
     </article>
 
-    <article id="3688" class="location-listing">
-
+    <article class="location-listing">
       <a class="location-title" href="#">St Florent</a>
 
       <div class="location-image">
@@ -74,9 +90,7 @@
             <img width="300" height="169" src="./photos-itineraires/St-Florent.jpg" alt="St Florent"></a>
       </div>
     </article>
-
-    <article id="3691" class="location-listing">
-
+    <article class="location-listing">
       <a class="location-title" href="#">Calvi</a>
 
       <div class="location-image">
@@ -85,9 +99,7 @@
         </div>
 
     </article>
-
-    <article id="3694" class="location-listing">
-
+    <article class="location-listing">
       <a class="location-title" href="#">Bastia</a>
 
       <div class="location-image">
@@ -97,8 +109,7 @@
 
     </article>
 
-    <article id="3697" class="location-listing">
-
+    <article class="location-listing">
       <a class="location-title" href="#">Corte</a>
 
       <div class="location-image">
@@ -107,9 +118,7 @@
         </div>
 
     </article>
-
-    <article id="3700" class="location-listing">
-
+    <article class="location-listing">
       <a class="location-title" href="#">Le Golf d'Ajaccio</a>
 
       <div class="location-image">
@@ -124,10 +133,34 @@
     </section>
   <!-- end grid container -->
 
-  <iframe src="https://www.google.com/maps/d/embed?mid=1wC68zTAJ30leyXf65A7C89G49fReCy3N&ehbc=2E312F" width="640" height="480"></iframe>
-
-
+  <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1wC68zTAJ30leyXf65A7C89G49fReCy3N&ehbc=2E312F" width="640" height="480"></iframe>
 
 </div>
+<footer>
+  <form class="footer-container">
+      <h2 class="newsletter">Recevez notre newsletter</h2>
+      <label for="email"><span>Saisissez votre adresse mail :</span></label><br />
+      <input class="email"
+      type="email"
+      id="email"
+      name="email"
+      value="name@forexample.com" /><br />
+      <input class="submit" type="submit" value="S'abonner" />
+  </form>        
+  <ul class="reseaux-sociaux">
+      <li>
+          <a href="https://twitter.com/home" target="blank">
+              <img class="twitter" src="./images/twitter.png"/></a>
+      </li>
+      <li>
+          <a href="https://www.instagram.com/boumedienne_dev/" target="blank">
+              <img class="instagram" src="./images/instagram.jpg"/></a>
+      </li>
+      <li>
+          <a href="https://www.facebook.com/" target="blank">
+              <img class="facebook" src="./images/facebook.jpg"/></a>
+      </li>
+  </ul>        
+</footer>
 </body>
 </html>
