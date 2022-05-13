@@ -7,10 +7,12 @@
 /* Mise en page de ma page d'accueil
     Utilisation flex-container */
 
-.fa-solid {
+/* mon icone menu burger */
+
+
+.fa-bars:before, .fa-navicon:before{
   display: none;
 }
-
 
 .nav > div {
   font-family: 'Inter';
@@ -456,6 +458,8 @@ ul li {
 @media screen and (max-width: 768px) /*(hover: none)*/ {
 
 .nav {
+  z-index: 999;
+  font-size: 50px;
   color: white;
   position: fixed;
   top: 10px;
@@ -476,10 +480,23 @@ ul li {
   background-color: aqua;
 }
 
-.nav-list-mobile {
+.nav-list-mobile a {
   color: white;
   font-weight: 800;
 }
+
+.list-visible {
+  top: 0;
+}
+
+.icon-visible {
+  color: aliceblue;
+}
+
+.fa-bars:before{
+  display: initial;
+}
+
 
 }
 
