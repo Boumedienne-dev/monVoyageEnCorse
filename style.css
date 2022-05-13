@@ -7,6 +7,10 @@
 /* Mise en page de ma page d'accueil
     Utilisation flex-container */
 
+.fa-solid {
+  display: none;
+}
+
 
 .nav > div {
   font-family: 'Inter';
@@ -452,6 +456,14 @@ ul li {
 @media screen and (max-width: 768px) /*(hover: none)*/ {
 
 .nav {
+  color: white;
+  position: fixed;
+  top: 10px;
+  right: 15px;
+}
+
+
+  .nav-list-mobile {
   position: fixed;
   top: -50vh;
   left:0;
@@ -464,7 +476,7 @@ ul li {
   background-color: aqua;
 }
 
-.nav {
+.nav-list-mobile {
   color: white;
   font-weight: 800;
 }
