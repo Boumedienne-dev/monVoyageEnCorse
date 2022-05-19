@@ -1,25 +1,35 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projet01</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <script src="https://kit.fontawesome.com/00feb8a068.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projet01</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/00feb8a068.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
                              <!-- Navigation Section-->
   <header>
-    <nav class="nav">
+    <nav class="navbar-desktop">
+      <img id="logo" src="./images/logoC.jpeg" alt="logo"/>
+      <a class="accueil nav-hover" href="index.html">Accueil</a>
+      <a class="propos nav-hover" href="propos.html">A Propos</a>
+      <a class="voyager nav-hover" href="voyager.html">Voyager</a>
+      <a class="contact nav-hover" href="contact.html">Contact</a>
+  </nav>
+  <nav class="navbar-mobile">
       <i class="fa-solid fa-bars"></i>
       <div class="nav-list-mobile">
-      <img id="logo" src="./images/logoC.jpeg" alt="logo"/>
-      <a class="accueil" href="index.html">Accueil</a>
-      <a class="propos" href="propos.html">A Propos</a>
-      <a class="voyager" href="voyager.html">Voyager</a>
-      <a class="contact" href="contact.html">Contact</a>
+          <img id="logo" src="./images/logoC.jpeg" alt="logo"/>
+          <a class="accueil" href="index.html">Accueil</a>
+          <a class="propos" href="propos.html">A Propos</a>
+          <a class="voyager" href="voyager.html">Voyager</a>
+          <a class="contact" href="contact.html">Contact</a>
       </div>
-    </nav>
+  </nav>
   </header>
 <body>
 
@@ -70,69 +80,57 @@
     </div>
     
   <div class="grid-container">
-
-
     <article class="location-listing">
       <a class="location-title" href="#">Cap Corse</a>
-
       <div class="location-image">
         <a href="#">
             <img width="300" height="169" src="./photos-itineraires/Cap-corse.jpg" alt="Cap Corse"></a>
-
       </div>
-
     </article>
 
     <article class="location-listing">
       <a class="location-title" href="#">St Florent</a>
-
       <div class="location-image">
         <a href="#">
             <img width="300" height="169" src="./photos-itineraires/St-Florent.jpg" alt="St Florent"></a>
       </div>
     </article>
+
     <article class="location-listing">
       <a class="location-title" href="#">Calvi</a>
-
       <div class="location-image">
         <a href="#">
             <img width="300" height="169" src="./photos-itineraires/Calvi.jpg" alt="Calvi"></a>
         </div>
-
     </article>
+
     <article class="location-listing">
       <a class="location-title" href="#">Bastia</a>
-
       <div class="location-image">
         <a href="#">
             <img width="300" height="169" src="./photos-itineraires/Bastia.jpg" alt="Bastia"></a>
         </div>
-
     </article>
 
     <article class="location-listing">
       <a class="location-title" href="#">Corte</a>
-
       <div class="location-image">
         <a href="#">
             <img width="300" height="169" src="./photos-itineraires/Corte.jpg" alt="Corte"></a>
         </div>
-
     </article>
+
     <article class="location-listing">
       <a class="location-title" href="#">Le Golf d'Ajaccio</a>
-
       <div class="location-image">
         <a href="#">
             <img width="300" height="169" src="./photos-itineraires/Le-Golf-d-Ajaccio.jpg" alt="Le Golf d'Ajaccio">          
           </a>
       </div>
-
     </article>
-
   </div>
     </section>
-  <!-- end grid container -->
+                                      <!-- end grid container -->
 
   <iframe class="map" src="https://www.google.com/maps/d/embed?mid=1wC68zTAJ30leyXf65A7C89G49fReCy3N&ehbc=2E312F" width="640" height="480"></iframe>
 

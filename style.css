@@ -14,23 +14,46 @@
   display: none;
 }
 
-.nav > div {
+.navbar-desktop {
   font-family: 'Inter';
   font-style: italic;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 30px;
+  line-height: 25px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   text-align: center;
   margin-bottom: 50px;
-    }
+  }
 
-  .nav {
+  .navbar-desktop {
     margin-top: 30px;
-    }
+  }
 
+.navbar-mobile i {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  font-size: 30px;
+  z-index: 999;
+}
+
+.nav-list-mobile {
+  position: fixed;
+  top: -50vh;
+  left:0;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  background-color: aqua;
+  transition: top 1s;
+  z-index: 900;
+}
     a {
     text-decoration: none;
     }
@@ -43,41 +66,17 @@
       border-radius: 10px;
         }
 
-    .accueil:hover {
-      border-bottom: 3px aqua solid;
-      height: 30px;
-      width: 12%;
-      align-items: center;
-    }
-
-    .propos:hover {
-      border-bottom: 3px aqua solid;
-      height: 30px;
-      width: 12%;
-      align-items: center;
-    }
-
-    .voyager:hover {
-      border-bottom: 3px aqua solid;
-      height: 30px;
-      width: 12%;
-      align-items: center;
-    }
-
-    .contact:hover {
-      border-bottom: 3px aqua solid;
-      height: 30px;
-      width: 12%;
-      align-items: center;
-
-    }
+.nav-hover:hover {
+  border-bottom: 3px aqua solid;
+}
 
 
   /* mon titre de site 
   Mon Voyage en Corse */
 
 h1 {
-    font-size: 40px;
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
     color: aliceblue;
     text-align: center;
 }
@@ -86,7 +85,7 @@ h1 {
 
 #accueil {
     background-image: url(./images/corse.jpg);
-    height: 400px;
+    height: 600px;
     background-position: center;
     background-size: cover;
     border-radius: 20px;
@@ -125,8 +124,8 @@ footer {
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
-  margin-top: 40px;
-  height: 150px;
+  margin-top: 70px;
+  
   background-color: aqua;
   }
 
@@ -457,29 +456,6 @@ ul li {
 
 @media screen and (max-width: 768px) /*(hover: none)*/ {
 
-.nav {
-  z-index: 999;
-  font-size: 50px;
-  color: white;
-  position: fixed;
-  top: 10px;
-  right: 15px;
-}
-
-
-  .nav-list-mobile {
-  position: fixed;
-  top: -50vh;
-  left:0;
-  width: 100%;
-  height: 50vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-  background-color: aqua;
-}
-
 .nav-list-mobile a {
   color: white;
   font-weight: 800;
@@ -493,14 +469,18 @@ ul li {
   color: aliceblue;
 }
 
+.navbar-desktop {
+  display: none;
+}
+
 .fa-bars:before{
   display: initial;
 }
 
 
-}
 
-     
+
+}
     
     
   
@@ -512,10 +492,11 @@ ul li {
   
   
   
-  /*.location-title {
+/*.location-title {
     opacity: 1;
-  
-  .location-image img {
+}
+    
+.location-image img {
     filter: blur(2px);
   }
 

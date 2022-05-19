@@ -4,7 +4,7 @@ const icon = document.querySelector(".fa-bars");
 const list = document.querySelector(".nav-list-mobile");
 
 // je les soumets à l'évenement
-icon.addEventListener("Click", function(){
+icon.addEventListener("click", function(){
     //instructions
     list.classList.toggle("list-visible");
     icon.classList.toggle("icon-visible");

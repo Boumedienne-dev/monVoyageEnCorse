@@ -7,19 +7,28 @@
     <title>Projet01</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/00feb8a068.js" crossorigin="anonymous"></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 </head>
     <body>
                          <!-- Navigation Section-->
         <header>
-            <nav class="nav">
+            <nav class="navbar-desktop">
+                <img id="logo" src="./images/logoC.jpeg" alt="logo"/>
+                <a class="accueil nav-hover" href="index.html">Accueil</a>
+                <a class="propos nav-hover" href="propos.html">A Propos</a>
+                <a class="voyager nav-hover" href="voyager.html">Voyager</a>
+                <a class="contact nav-hover" href="contact.html">Contact</a>
+            </nav>
+            <nav class="navbar-mobile">
                 <i class="fa-solid fa-bars"></i>
                 <div class="nav-list-mobile">
-                <img id="logo" src="./images/logoC.jpeg" alt="logo"/>
-                <a class="accueil" href="index.html">Accueil</a>
-                <a class="propos" href="propos.html">A Propos</a>
-                <a class="voyager" href="voyager.html">Voyager</a>
-                <a class="contact" href="contact.html">Contact</a>
+                    <img id="logo" src="./images/logoC.jpeg" alt="logo"/>
+                    <a class="accueil" href="index.html">Accueil</a>
+                    <a class="propos" href="propos.html">A Propos</a>
+                    <a class="voyager" href="voyager.html">Voyager</a>
+                    <a class="contact" href="contact.html">Contact</a>
                 </div>
             </nav>
         </header>
@@ -49,11 +58,9 @@
                   <!-- Mise en page avec Grid container -->
 
         <div class="child-page-listing">
-
-            <h2>Ma Galerie</h2>
-          
+                <h2>Ma Galerie</h2>
+                
             <div class="grid-container">               
-            
                 <div class="location-image">
                 <img src="./images/image6.jpg" alt="image2">          
                 </div>
@@ -70,8 +77,6 @@
                 <img src="./images/image22.jpg" alt="image22">
                 </div>
 
-               
-
                 <div class="location-image">
                 <img src="./images/image27.jpg" alt="image27">
                 </div>
@@ -80,11 +85,9 @@
                 <img src="./images/image2.jpg" alt="image6">
                 </div>
 
-                
                 <div class="location-image">
                 <img src="./images/image19.jpg" alt="image19">
                 </div>        
-          
             </div>
                         <!-- end grid container -->
     </section>
@@ -109,7 +112,7 @@
                 <input class="email" type="email" id="email" name="email" value="name@forexample.com" /><br />
                 <input class="submit" type="submit" value="S'abonner" />
         </form>        
-            ul class="reseaux-sociaux">
+            <ul class="reseaux-sociaux">
                 <li><a href="https://twitter.com/home" target="blank">
                     <img class="twitter" src="./images/twitter.png"/></a>
                 </li>
