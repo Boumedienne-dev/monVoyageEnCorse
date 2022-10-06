@@ -1,0 +1,503 @@
+* {
+  list-style: none;
+  padding: 0;
+  box-sizing: border-box;
+    }
+
+/* Mise en page de ma page d'accueil
+    Utilisation flex-container */
+
+/* mon icone menu burger */
+
+
+.fa-bars:before, .fa-navicon:before{
+  display: none;
+}
+
+.navbar-desktop {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 25px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+  }
+
+  .navbar-desktop {
+    margin-top: 30px;
+  }
+
+.navbar-mobile i {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  font-size: 30px;
+  z-index: 999;
+}
+
+.nav-list-mobile {
+  position: fixed;
+  top: -50vh;
+  left:0;
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  background-color: aqua;
+  transition: top 1s;
+  z-index: 900;
+}
+    a {
+    text-decoration: none;
+    }
+
+    #logo {
+      width: 120px;
+      height: 90px;
+      left: 40px;
+      top: 5px;
+      border-radius: 10px;
+        }
+
+.nav-hover:hover {
+  border-bottom: 3px aqua solid;
+}
+
+
+  /* mon titre de site 
+  Mon Voyage en Corse */
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 50px;
+    color: aliceblue;
+    text-align: center;
+}
+
+/* creation de mon image d'accueil */
+
+#accueil {
+    background-image: url(./images/corse.jpg);
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 20px;
+    opacity: 0.9;
+}
+
+/* mise en page de mon footer*/
+
+/* taille de mes 3 logos de reseaux-sociaux */
+
+.twitter, .instagram, .facebook {
+  
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.instagram {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* flex de mes 3 logos de reseaux-sociaux */
+
+.reseaux-sociaux{
+  display: flex;
+  align-items: center;
+  height: 150px;  
+}
+
+/* flexbox de newsletter et reseaux-sociaux */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  margin-top: 70px;
+  
+  background-color: aqua;
+  }
+
+  .newsletter {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    background: none;
+    
+  }
+
+  .email {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #DEDEDE;
+    margin-bottom: 10px;
+  }
+
+  .submit {
+    background-color: #DEDEDE;
+    border: #DEDEDE;
+    padding: 5px 10px;
+    margin-bottom: 20px;
+  }
+
+  /* span de saisissez votre adresse mail */
+
+  span {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+  }
+
+  /* une marge à mon contenu newsletter et email */
+
+  .footer-container {
+    margin: 20px;
+  }
+
+
+/* Mise en page A Propos de moi
+utilisation la méthode grid  */
+/* need to overwrite inline dimensions */
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.flex-container > p{
+  width: 40%;
+}
+
+.boum{
+  width: 30%;
+  height: 200px;
+  }
+
+img {
+  width: 100%; 
+  height: 100%;
+}
+
+h2 {
+  margin-bottom: .5em;
+  background-color: lightgrey;
+  color: rgb(0, 153, 255);
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-align: left;
+  margin: 20px;
+  }
+
+p {
+  text-align:justify;
+  margin: 20px;
+}
+
+/* mis en grid mes 5 photos horizontalement page2*/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  grid-gap: 1em;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+/* video corse à centrer */
+
+.video {
+  text-align: center;
+}
+
+        /* mise en page de mon menu voyager */
+
+.location-image a img {
+  width: 100%; /* need to overwrite inline dimensions */
+  height: auto;
+}
+
+
+/* Mise en page de mes photos parcours en colonne */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 1em;
+}
+
+/* Mise en page de mon paragraphe (mes bons plans)&itinéraire et photos-parcours avec flex */
+
+.voyager-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+}
+
+.partie-gauche {
+  width: 50%;
+}
+
+h3 {
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.776);
+  margin: 20px;
+}
+
+ul li {
+  list-style-position: inside;
+  margin: 20px;
+  color: rgba(0, 0, 0, 0.776);
+  font-size: 20px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mon-itineraire-15-jours {
+  background-color: aqua;
+}
+
+
+/* hover styles */
+.location-listing {
+  position: relative;
+}
+
+.location-image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.location-image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+}
+
+.location-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(90,0,10,0.4);
+  color: white;
+  
+  /* position the text in t’ middle*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.location-listing:hover .location-title {
+  opacity: 1;
+}
+
+.location-listing:hover .location-image img {
+  filter: blur(2px);
+}
+
+.map {
+  width: 100%;
+  padding: 30px;
+}
+
+
+
+/* mise en page de mon menu Contact */
+
+
+.contactez-nous {
+  width: 100%;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 30px;
+  background: white;
+  }
+  
+  .contactez-nous > h2 {
+  font-weight: 500;
+  }
+  
+  form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    min-height: 83px;
+    margin-top: 25px;
+    }
+
+  form div > label {
+  margin-bottom: 7px;
+  font-weight: 600;
+  }
+  
+  form div > input, form div > select, form div > textarea {
+  background:aqua;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: Montserrat, "sans-serif";
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.25);
+  }
+  
+  form div > input, form div > select {
+  height: 50px;
+  padding-left: 10px;
+  }
+  
+  form div > select {
+  appearance: none;
+  background-size: 15px;
+  background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDIxMy4zMzMgMjEzLjMzMyIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgNTEyIDUxMiIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgY2xhc3M9IiI+PGc+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cG9seWdvbiBwb2ludHM9IjAsNTMuMzMzIDEwNi42NjcsMTYwIDIxMy4zMzMsNTMuMzMzICAgIiBmaWxsPSIjMzAzMDMwIiBkYXRhLW9yaWdpbmFsPSIjMDAwMDAwIiBzdHlsZT0iIiBjbGFzcz0iIj48L3BvbHlnb24+Cgk8L2c+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPC9nPjwvc3ZnPg==');
+  background-position: right 10px top 50%;
+  background-repeat: no-repeat;
+  }
+  
+  form div > textarea {
+  height: 195px;
+  padding: 15px 0px 0px 10px;
+  }
+  
+/* nom prenom en noir dans contact */
+
+  form div > input::placeholder, form div > textarea::placeholder {
+  color: rgb(8, 8, 8);
+  }
+  
+  /* le sujet de votre message en noir */
+  
+  form div > select:invalid {
+  color: rgb(8, 8, 8);
+  }
+  
+  /* choix des réponses à la question en blanc */
+  
+  form div > select option {
+  background: white;
+  color: #303030;
+  }
+  
+  .message {
+  align-items:center;
+  }
+  
+  form button {
+  width: 300px;
+  max-width: 400px;
+  height: 80px;
+  font-weight: 700;
+  font-size: 28px;
+  background: white;
+  border: rgba(48, 48, 48, 0.5) solid 1px;
+  border-radius: 5px;
+  box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+  color: #303030;
+  }
+
+  label {
+    font-size: 25px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   color: #303030;
+  }
+
+  .container-notifications {
+    position: fixed;
+    bottom: 200px;
+    right: 100px;
+    margin: 3rem;
+    font-size: 1.2rem;
+    width: 60%;
+}
+
+.notification-message {
+  padding: 10px;
+  margin: 10px;
+  border: 3px black solid;
+  background-color: white;
+  border-radius: 10px;
+}
+  
+
+
+    
+    
+
+
+
+
+/* for touch screen devices */
+
+@media screen and (max-width: 768px) /*(hover: none)*/ {
+
+.nav-list-mobile a {
+  color: white;
+  font-weight: 800;
+}
+
+.list-visible {
+  top: 0;
+}
+
+.icon-visible {
+  color: aliceblue;
+}
+
+.navbar-desktop {
+  display: none;
+}
+
+.fa-bars:before{
+  display: initial;
+}
+
+
+
+
+}
+    
+    
+  
+  
+  
+  
+  
+  
+  
+  
+  
+/*.location-title {
+    opacity: 1;
+}
+    
+.location-image img {
+    filter: blur(2px);
+  }
+
+

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projet01</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/00feb8a068.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+    <body>
+                         <!-- Navigation Section-->
+        <header>
+            <nav class="navbar-desktop">
+                <img id="logo" src="./images/logoC.jpeg" alt="logo"/>
+                <a class="accueil nav-hover" href="index.html">Accueil</a>
+                <a class="propos nav-hover" href="propos.html">A Propos</a>
+                <a class="voyager nav-hover" href="voyager.html">Voyager</a>
+                <a class="contact nav-hover" href="contact.html">Contact</a>
+            </nav>
+            <nav class="navbar-mobile">
+                <i class="fa-solid fa-bars"></i>
+                <div class="nav-list-mobile">
+                    <img id="logo" src="./images/logoC.jpeg" alt="logo"/>
+                    <a class="accueil" href="index.html">Accueil</a>
+                    <a class="propos" href="propos.html">A Propos</a>
+                    <a class="voyager" href="voyager.html">Voyager</a>
+                    <a class="contact" href="contact.html">Contact</a>
+                </div>
+            </nav>
+        </header>
+<body>
+
+                    <!-- Creation flex-container de mon paragraphe et ma photo -->
+    <section>
+                    <h2>A Propos de moi</h2>
+    <div class="flex-container">
+            <p>L’envie de partir en voyage vous démange ? Ça tombe bien, vous êtes au bon endroit !
+            On passe tous par ces moments où l’on a envie de faire sa valise, de sauter dans un train, 
+            un avion, une fusée, <strong>n’importe quoi pour peu qu’on change d’univers…</strong> 
+            C’est ce week-end qui s’organise dans une jolie capitale, 
+            ce road-trip pour en prendre plein les yeux au bout du monde ou 
+            tout simplement cette soif de découvrir sa propre ville !
+            Ce blog est là pour vous aider à dire <strong>« Mon Voyage en Corse »</strong> à votre quotidien 
+            le temps d’un voyage, 
+            qu’il soit court, long, 
+            lointain ou à deux pas de chez vous !          
+            </p>
+            <img src="./images/image12.jpg" alt="" class="boum">
+        
+    </div>
+    </section>
+    
+
+                  <!-- Mise en page avec Grid container -->
+
+        <div class="child-page-listing">
+                <h2>Ma Galerie</h2>
+                
+            <div class="grid-container">               
+                <div class="location-image">
+                <img src="./images/image6.jpg" alt="image2">          
+                </div>
+          
+                <div class="location-image">
+                <img src="./images/image4.jpg" alt="image4">          
+                </div>
+
+                <div class="location-image">
+                <img src="./images/image7.jpg" alt="image7">          
+                </div>                 
+                                           
+                <div class="location-image">
+                <img src="./images/image22.jpg" alt="image22">
+                </div>
+
+                <div class="location-image">
+                <img src="./images/image27.jpg" alt="image27">
+                </div>
+
+                <div class="location-image">
+                <img src="./images/image2.jpg" alt="image6">
+                </div>
+
+                <div class="location-image">
+                <img src="./images/image19.jpg" alt="image19">
+                </div>        
+            </div>
+                        <!-- end grid container -->
+    </section>
+                        <!-- Video Corse -->
+
+    <section>
+        <h2>Que voir en Corse</h2>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/w-oHIqHJqd0" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+                            <!-- Footer Newsletter -->
+
+    <footer>
+        <form class="footer-container">
+            <h2 class="newsletter">Recevez notre newsletter</h2>
+                <label for="email"><span>Saisissez votre adresse mail :</span></label><br />
+                <input class="email" type="email" id="email" name="email" value="name@forexample.com" /><br />
+                <input class="submit" type="submit" value="S'abonner" />
+        </form>        
+            <ul class="reseaux-sociaux">
+                <li><a href="https://twitter.com/home" target="blank">
+                    <img class="twitter" src="./images/twitter.png"/></a>
+                </li>
+                <li><a href="https://www.instagram.com/boumedienne_dev/" target="blank">
+                    <img class="instagram" src="./images/instagram.png"/></a>
+                </li>
+                <li><a href="https://www.facebook.com/" target="blank">
+                    <img class="facebook" src="./images/fb.png"/></a>
+                </li>
+            </ul>        
+        </footer>
+    
+</body>
+</html>
