@@ -130,7 +130,9 @@ footer {
   }
 
   .newsletter {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    color: #551a8b;
     font-style: italic;
     background: none;
     
@@ -154,7 +156,7 @@ footer {
 
   span {
     font-size: 12px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: 'Mali', cursive;
     font-style: italic;
   }
 
@@ -194,9 +196,8 @@ h2 {
   background-color: lightgrey;
   color: rgb(0, 153, 255);
   font-size: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: 'Mali', cursive;
   text-align: left;
-  margin: 20px;
   }
 
 p {
@@ -477,27 +478,14 @@ ul li {
   display: initial;
 }
 
+.voyager-container {
+  display: grid;
+  grid-template-columns: auto;
+}
 
-
+.partie-gauche {
+  width: 100%;
+}
 
 }
     
-    
-  
-  
-  
-  
-  
-  
-  
-  
-  
-/*.location-title {
-    opacity: 1;
-}
-    
-.location-image img {
-    filter: blur(2px);
-  }
-
-
